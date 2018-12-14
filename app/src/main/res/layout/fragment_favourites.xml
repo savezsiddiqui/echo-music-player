@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/visible_layout_favScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/favouritesRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/hiddenBarFavScreen"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/playBottomBar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="31dp"
+            android:background="@drawable/play_icon" />
+
+        <TextView
+            android:id="@+id/nowPlaying"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/product_sans_bold"
+            android:text="Now Playing:"
+            android:textColor="#bdbdbd" />
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="#0097a7" />
+
+        <TextView
+            android:id="@+id/songTitleFavScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/nowPlaying"
+            android:layout_below="@id/nowPlaying"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/product_sans_regular"
+            android:maxWidth="180dp"
+            android:singleLine="true"
+            android:text="song title will appear here"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/noFavourites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/product_sans_regular"
+        android:gravity="center"
+        android:text="Song that you favourite will appear here. Start adding songs to favourites by tapping on the heart button in the Now Playing Screen."
+        android:textColor="#212121"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

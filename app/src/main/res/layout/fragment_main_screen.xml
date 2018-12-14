@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/visible_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.l4digital.fastscroll.FastScrollRecyclerView
+            android:id="@+id/contentMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:bubbleColor="#9b2a58"
+            app:bubbleTextColor="#ffffff"
+            app:handleColor="#9b2a58"
+            app:hideScrollbar="false"
+            app:showTrack="false"
+            app:trackColor="#bbbbbb" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/hidden_bar_mainscreen"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/playPauseButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="31dp"
+            android:background="@drawable/play_icon" />
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="#0097a7" />
+
+        <TextView
+            android:id="@+id/nowPlaying"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/product_sans_bold"
+            android:text="Now Playing:"
+            android:textColor="#bdbdbd" />
+
+        <TextView
+            android:id="@+id/songTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/nowPlaying"
+            android:layout_below="@id/nowPlaying"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/product_sans_regular"
+            android:maxWidth="180dp"
+            android:singleLine="true"
+            android:text="song title will appear here"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/noSongs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#ffffff"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/product_sans_regular"
+            android:gravity="center"
+            android:text="You don't have any songs"
+            android:textColor="#000000" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

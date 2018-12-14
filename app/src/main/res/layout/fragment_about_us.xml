@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_about_us"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/echo_logo"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/echo_logo" />
+
+    <TextView
+        android:id="@+id/made_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/echo_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:text="made by:"
+        android:textColor="#eeeeee"
+        android:textSize="17dp" />
+
+    <ImageView
+        android:id="@+id/arc_reactor"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/made_by"
+        android:layout_marginStart="80dp"
+        android:padding="10dp"
+        android:src="@drawable/arc" />
+
+    <TextView
+        android:id="@+id/stark5"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/made_by"
+        android:layout_toEndOf="@id/arc_reactor"
+        android:fontFamily="@font/product_sans_bold_italic"
+        android:gravity="center"
+        android:text="STARK5"
+        android:textColor="#eeeeee"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/powered_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stark5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:text="powered by:"
+        android:textColor="#eeeeee"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/internshala"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/powered_by"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:src="@drawable/internshala" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/powered_by"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/internshala"
+        android:fontFamily="@font/product_sans_regular"
+        android:gravity="center"
+        android:text="INTERNSHALA"
+        android:textColor="#eeeeee"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/app_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/internshala"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/product_sans_regular"
+        android:text="App Version: 1.0.4"
+        android:textColor="#eeeeee"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/stark5"
+        android:layout_marginTop="218dp"
+        android:fontFamily="@font/product_sans_bold"
+        android:text="//Savez Siddiqui"
+        android:textColor="#0097a7" />
+
+
+</RelativeLayout>
